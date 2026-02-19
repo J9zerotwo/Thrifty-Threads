@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/featured-image.jpg"); /* Replace with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+.login-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.login-container .featured {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: x-large; /* Increased font size */
+    color: #394352;
+    text-align: center; /* Center alignment */
+    margin-bottom: 20px;
+}
+
+
+.login-container form input[type="text"],
+.login-container form input[type="password"],
+.login-container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container form input[type="submit"] {
+    background-color: #4e5c70;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.login-container form input[type="submit"]:hover {
+    background-color: #434f61;
+}
+
+.login-container form input[type="submit"]:focus {
+    outline: none;
+}
+
+.login-container form input[type="text"]:focus,
+.login-container form input[type="password"]:focus {
+    outline: none;
+    border-color: #4e5c70;
+}
+
+.login-container form {
+    margin-bottom: 10px;
+}
+
+.login-container form br {
+    display: none;
+}
+
+.login-container form input[type="submit"],
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-container form input[type="submit"] {
+    background-color: #4e5c70;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.login-container form input[type="submit"]:hover {
+    background-color: #434f61;
+}
+
+.login-container form input[type="submit"]:focus {
+    outline: none;
+}
+
+.login-container form input[type="text"]:focus,
+.login-container form input[type="password"]:focus {
+    outline: none;
+    border-color: #4e5c70;
+}
+
+.login-container form br {
+    display: none;
+}
+
+.sign-up.container {
+    width: 650px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 100px; /* Adjust the top margin as per your preference */
+}
+
+.sign-up.container form input[type="text"],
+.sign-up.container form input[type="password"],
+.sign-up.container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-up.container form input[type="submit"] {
+    background: #4e5c70;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-row input[type="text"],
+.input-row input[type="password"] {
+    flex: 1;
+}
+
+.alert-message {
+    text-align: center;
+    margin-top: 10px;
+}
